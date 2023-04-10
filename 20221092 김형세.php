@@ -51,29 +51,13 @@ echo "6 8<br><br>";
 
 echo "4번 문제 <br><br>";
 
-$width = 3;
-$height = 3;
-$redius = 3;
-$length = 3;
-$pi = pi();
-
-$triangle = 0.5 * $width * $height; 
-echo "삼각형의 면적 : $triangle <br>"; 
-
-$rectangle = $width * $height; 
-echo "직사각형의 면적 : $rectangle <br>"; 
-
-$circle = $redius * $redius * $pi; 
-echo "원의 면적 : $circle <br>"; 
-
-$cuboid = $length * $height * $width; 
-echo "정육면체의 면적 : $cuboid <br>"; 
-
-$cylinder = $redius * $redius * $pi * $height; 
-echo "원통의 면적 : $cylinder <br>"; 
-
-$sphere = 3/4 * $pi * $redius * $redius * $redius; 
-echo "구의 면적 : $sphere <br><br>"; 
+<form action="welcome.php" method="post">
+width: <input type="text" name="width"><br>
+height: <input type="text" name="height"><br>
+length: <input type="text" name="length"><br>
+radius: <input type="text" name="radius"><br>
+<input type="submit">
+</form>
 
 echo "5번 문제 <br><br>";
 ?>
